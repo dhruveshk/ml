@@ -4,8 +4,8 @@ from numpy import nan
 import numpy as np
 from sklearn.metrics import classification_report,precision_score,recall_score,roc_auc_score,confusion_matrix
 import sklearn.metrics as metric
-
-
+#use it for finding multiclass specificity
+#yt is the predicted classes array and pa is the actual true classes array
 def specif(yt,pa):
     cm = confusion_matrix(yt,pa)
     speci=0
